@@ -1,0 +1,6 @@
+<h1>Panel de Administración</h1>
+<p>Bienvenido, <%= current_user.email %>!</p>
+<ul>
+  <li><%= link_to 'Gestionar Edificios', admin_manage_buildings_path, class:"btn btn-outline-secondary" %></li>
+  <li><%= link_to 'Gestionar Departamentos', admin_manage_apartments_path %></li>
+</ul>

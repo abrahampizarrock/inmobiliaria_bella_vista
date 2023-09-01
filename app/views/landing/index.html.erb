@@ -1,0 +1,13 @@
+<h1>Bienvenido a Inmobiliaria Buena Vista</h1>
+
+<p>Contacto: info@inmobiliariabv.com</p>
+<p>Teléfono: 123-456-789</p>
+
+<% @apartments.each do |apartment| %>
+  <div class="departamento">
+    <h2><%= apartment.nombre %></h2>
+    <p>Modalidad: <%= apartment.modalidad %></p>
+    <%= link_to 'Ver detalles', apartment_path(apartment) %>
+  </div>
+<% end %>
+
